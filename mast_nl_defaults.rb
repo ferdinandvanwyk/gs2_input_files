@@ -147,12 +147,12 @@
 @max_unbalanced_xxf = 0.5    # This sets the maximum level of difference between the largest and smallest block sizes. Must be between 0 and 1
 @unbalanced_yxf = ".true."    # This allows GS2 to set up an unbalanced yxxf processor grid (e.g. leaving some tasks with no work) in order to balance the work load on each.
 @max_unbalanced_yxf = 0.5    # This sets the maximum level of difference between the largest and smallest block sizes. Must be between 0 and 1
-@opt_redist_nbk = ".true."    # This enables the use of non-blocking communication in redistribute routines.
-@opt_redist_init = ".true."    # This enables optimized initialization routines for creating redistribution objects.
+@opt_redist_nbk = ".false."    # This enables the use of non-blocking communication in redistribute routines.
+@opt_redist_init = ".false."    # This enables optimized initialization routines for creating redistribution objects.
 @intmom_sub = ".true."    # This enables use of sub-communicators to do reduction associated with calculation of moments of distribution function. Most advantageous for collisional runs without LE layouts.
 @intspec_sub = ".true."    # This enables use of sub-communicators to do reduction associated with calculation of species integrated moments of distribution function.
-@opt_redist_persist = ".true."    # Set to true to use persistent (non-blocking) comms in the redistribute routines.
-@opt_redist_persist_overlap = ".true."    # Set to true to try to overlap the mpi and local parts of the gather/scatter routines.
+@opt_redist_persist = ".false."    # Set to true to use persistent (non-blocking) comms in the redistribute routines.
+@opt_redist_persist_overlap = ".false."    # Set to true to try to overlap the mpi and local parts of the gather/scatter routines.
 
 ######################################
 # Defaults for namelist collisions_knobs
