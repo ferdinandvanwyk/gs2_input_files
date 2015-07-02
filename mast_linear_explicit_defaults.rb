@@ -52,8 +52,8 @@
 # Defaults for namelist theta_grid_parameters
 #######################################
 
-@ntheta = 16    # Number of points along field line (theta) per 2 pi segment
-@nperiod = 2    # Number of 2 pi segments along equilibrium magnetic field.
+@ntheta = 20    # Number of points along field line (theta) per 2 pi segment
+@nperiod = 3    # Number of 2 pi segments along equilibrium magnetic field.
 @shat = 3.9955695    # 
 @rhoc = 0.7966436    # Flux surface label. Usually rho = diameter/diameter of LCFS
 @qinp = 2.31493    # Sets value of the safety factor when using local toroidal equilibrium model.
@@ -92,8 +92,8 @@
 # Defaults for namelist le_grids_knobs
 #######################################
 
-@ngauss = 5    # Number of untrapped pitch-angles moving in one direction along field line.
-@negrid = 8    # Total number of energy grid points
+@ngauss = 16    # Number of untrapped pitch-angles moving in one direction along field line.
+@negrid = 16    # Total number of energy grid points
 
 
 ######################################
@@ -105,7 +105,7 @@
 @g_exb = 0.15913171    # 
 @apfac = 1.0    # 
 @driftknob = 1.0    # 
-@g_exb_start_timestep = 100    # Flow shear is switched on at this time step.
+@g_exb_start_timestep = 1000    # Flow shear is switched on at this time step.
 @g_exb_error_limit = 0.1    # With flow shear in single mode, constrains relative error in phi^2.
 
 
@@ -127,8 +127,8 @@
 @fphi = 1.0    # Multiplies Phi (electrostatic potential).
 @fapar = 0.0    # Multiplies A_par. Use 1 for finite beta (electromagnetic), 0 otherwise (electrostatic)
 @faperp = 0.0    # Multiplies A_perp. Use 1 for high beta, 0 otherwise. Deprecated: use fbpar instead
-@delt = 0.1    # Time step
-@nstep = 500    # Maximum number of timesteps
+@delt = 0.01    # Time step
+@nstep = 5000    # Maximum number of timesteps
 @avail_cpu_time = 1500    # Specify the available wall clock time in seconds. GS2 will exit before this time.
 
 
