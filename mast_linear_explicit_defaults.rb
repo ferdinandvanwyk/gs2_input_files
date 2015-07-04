@@ -260,14 +260,14 @@
 @write_final_fields = ".true."    # If (write_ascii = T) Phi(theta) written to '.fields'
 @write_final_moments = ".true."    # write final n, T
 @nsave = 500    # Write restart files every nsave timesteps
-@nwrite = 1    # Output diagnostic data every nwrite
+@nwrite = 10    # Output diagnostic data every nwrite
 @navg = 10    # Any time averages performed over navg
 @omegatol = -0.001    # The convergence has to be better than one part in 1/omegatol
 @omegatinst = 500.0    # Recommended value: 500.
 @save_for_restart = ".false."    # Write restart files.
 @write_cross_phase = ".true."    # 
 @dump_check1 = ".false."    # 
-@write_phi_over_time = ".true."    # Write entire Phi field to NetCDF file every nwrite.
+@write_phi_over_time = ".false."    # Write entire Phi field to NetCDF file every nwrite.
 @write_full_moments_notgc = ".true."
 
 
@@ -275,7 +275,7 @@
 # Defaults for namelist diagnostics_config
 #######################################
 
-@write_phi_over_time = ".true."    # Write entire phi field to NetCDF file every nwrite.
+@write_phi_over_time = ".false."    # Write entire phi field to NetCDF file every nwrite.
 @write_omega = ".false."    # Write growth rates and frequencies to the netcdf file
 @navg = 10    # Any time averages performed over navg
 @omegatinst = 500.0    # Growth rates > omegatinst assumed numerical instability.
