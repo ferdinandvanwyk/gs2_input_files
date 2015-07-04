@@ -21,7 +21,7 @@
 # Defaults for namelist kt_grids_knobs
 #######################################
 
-@grid_option = "box"    # The general layout of the perpendicular grid.
+@grid_option = "range"    # The general layout of the perpendicular grid.
 
 ######################################
 # Defaults for namelist kt_grids_box_parameters
@@ -54,8 +54,8 @@
 # Defaults for namelist theta_grid_parameters
 #######################################
 
-@ntheta = 20    # Number of points along field line (theta) per 2 pi segment
-@nperiod = 2    # Number of 2 pi segments along equilibrium magnetic field.
+@ntheta = 24    # Number of points along field line (theta) per 2 pi segment
+@nperiod = 3    # Number of 2 pi segments along equilibrium magnetic field.
 @shat =  3.9955695   # 
 @rhoc = 0.79664360    # Flux surface label. Usually rho = diameter/diameter of LCFS
 @qinp = 2.31493    # Sets value of the safety factor when using local toroidal equilibrium model.
@@ -91,7 +91,7 @@
 # Defaults for namelist le_grids_knobs
 #######################################
 
-@ngauss = 8    # Number of untrapped pitch-angles moving in one direction along field line.
+@ngauss = 16    # Number of untrapped pitch-angles moving in one direction along field line.
 @negrid = 16    # Total number of energy grid points
 
 ######################################
@@ -102,7 +102,7 @@
 @apfac = 1.0    # 
 @driftknob = 1.0    # 
 @g_exb = 0.15913171	# Velocity shear	
-@boundary_option = "linked"
+@boundary_option = "default"
 
 ######################################
 # Defaults for namelist fields_knobs
@@ -121,9 +121,9 @@
 @fphi = 1.0    # Multiplies Phi (electrostatic potential).
 @fapar = 0.0    # Multiplies A_par. Use 1 for finite beta (electromagnetic), 0 otherwise (electrostatic)
 @faperp = 0.0    # Multiplies A_perp. Use 1 for high beta, 0 otherwise. Deprecated: use fbpar instead
-@delt = 0.5    # Time step
+@delt = 0.01    # Time step
 @delt_minimum = 1.0e-6	#Minimum time step allowed
-@nstep = 1000    # Maximum number of timesteps
+@nstep = 3000    # Maximum number of timesteps
 @abort_rapid_time_step_change = ".false." #Set whether error occurs for time step changing too rapidly. False better since will quit only of too small
 @delt_adj = 2.0    # When the time step needs to be changed, it is adjusted 
 

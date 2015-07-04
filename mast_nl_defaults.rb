@@ -127,6 +127,7 @@
 @faperp = 0.0    # Multiplies A_perp. Use 1 for high beta, 0 otherwise. Deprecated: use fbpar instead
 @delt = 0.01    # Time step
 @nstep = 100000    # Maximum number of timesteps
+@margin_cpu_time = 600
 
 
 ######################################
