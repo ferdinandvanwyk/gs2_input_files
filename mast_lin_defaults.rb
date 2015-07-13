@@ -221,9 +221,9 @@
 #######################################
 
 @print_line = ".false."    # Estimated frequencies and growth rates to the screen/stdout
-@write_line = ".false."    # If (write_ascii = T) write estimated frequencies and growth rates to the output file
-@write_omega = ".false."    # If (write_ascii = T) instantaneous omega to output file. Very heavy output
-@write_omavg = ".false."    # If (write_ascii = T) time-averaged growth rate and frequency to the output file.
+@write_line = ".true."    # If (write_ascii = T) write estimated frequencies and growth rates to the output file
+@write_omega = ".true."    # If (write_ascii = T) instantaneous omega to output file. Very heavy output
+@write_omavg = ".true."    # If (write_ascii = T) time-averaged growth rate and frequency to the output file.
 @write_eigenfunc = ".true."    # If (write_ascii = T) Normalized phi written to runname.eigenfunc
 @write_final_fields = ".true."    # If (write_ascii = T) Phi(theta) written to '.fields'
 @write_final_moments = ".true."    # write final n, T
