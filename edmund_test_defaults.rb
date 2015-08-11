@@ -253,12 +253,3 @@
 @theta0 = 0
 @aky = 0.778    # 
 
-
-######################################
-# Defaults for namelist diagnostics_config
-#######################################
-
-@write_omega = ".true."    # Write growth rates and frequencies to the netcdf file
-@navg = 1000    # Any time averages performed over navg
-@omegatinst = 500.0    # Growth rates > omegatinst assumed numerical instability.
-@omegatol = 0.0001    # The convergence has to be better than one part in 1/omegatol

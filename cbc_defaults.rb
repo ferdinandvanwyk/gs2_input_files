@@ -269,15 +269,6 @@
 # write_moments not specified --- 
 # write_final_db not specified --- Write final delta B.
 @write_full_moments_notgc = ".true."
-######################################
-# Defaults for namelist diagnostics_config
-#######################################
-
-@nwrite_new = 100    # Diagnostic quantities are written every nwrite timesteps.
-@write_omega = ".false."    # Write growth rates and frequencies to the netcdf file
-@navg = 10    # Any time averages performed over navg
-@omegatinst = 500.0    # Growth rates > omegatinst assumed numerical instability.
-@omegatol = -0.001    # The convergence has to be better than one part in 1/omegatol
 
 #################
 # Optimizations #

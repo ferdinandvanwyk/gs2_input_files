@@ -261,16 +261,3 @@
 @dump_check1 = ".false."    # 
 @write_phi_over_time = ".true."    # Write entire Phi field to NetCDF file every nwrite.
 
-
-######################################
-# Defaults for namelist diagnostics_config
-#######################################
-
-@write_any = ".false."    # If .false. disables the new diagnostics module.
-@write_phi_over_time = ".true."    # Write entire phi field to NetCDF file every nwrite.
-@write_omega = ".false."    # Write growth rates and frequencies to the netcdf file
-@navg = 10    # Any time averages performed over navg
-@omegatinst = 500.0    # Growth rates > omegatinst assumed numerical instability.
-@omegatol = -1    # The convergence has to be better than one part in 1/omegatol
-@exit_when_converged = ".true."    #  When the frequencies for each k have converged, the run will stop.
-

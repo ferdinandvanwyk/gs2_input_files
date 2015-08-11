@@ -262,13 +262,3 @@
 @write_cross_phase = ".true."    # 
 @dump_check1 = ".false."    # 
 
-
-######################################
-# Defaults for namelist diagnostics_config
-#######################################
-
-@nwrite_new = 1    # Diagnostic quantities are written every nwrite timesteps.
-@write_omega = ".false."    # Write growth rates and frequencies to the netcdf file
-@navg = 10    # Any time averages performed over navg
-@omegatinst = 500.0    # Growth rates > omegatinst assumed numerical instability.
-@omegatol = -0.001    # The convergence has to be better than one part in 1/omegatol

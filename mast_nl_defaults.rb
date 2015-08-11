@@ -258,13 +258,3 @@
 @write_verr = ".true." # Write velocity space diagnostics to '.lpc' and '.verr' files
 @write_cross_phase = ".true."
 @write_avg_moments = ".true."    # Write flux surface averaged low-order moments of g to runname.out.nc and runname.moments (if write_ascii = T)
-
-######################################
-# Defaults for namelist diagnostics_config
-#######################################
-
-@nwrite_new = 100    # Diagnostic quantities are written every nwrite timesteps.
-@write_omega = ".false."    # Write growth rates and frequencies to the netcdf file
-@navg = 10    # Any time averages performed over navg
-@omegatinst = 500.0    # Growth rates > omegatinst assumed numerical instability.
-@omegatol = -0.001    # The convergence has to be better than one part in 1/omegatol

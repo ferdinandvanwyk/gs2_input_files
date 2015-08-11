@@ -269,13 +269,3 @@
 @write_phi_over_time = ".false."    # Write entire Phi field to NetCDF file every nwrite.
 @write_full_moments_notgc = ".true."
 
-
-######################################
-# Defaults for namelist diagnostics_config
-#######################################
-
-@write_phi_over_time = ".false."    # Write entire phi field to NetCDF file every nwrite.
-@write_omega = ".false."    # Write growth rates and frequencies to the netcdf file
-@navg = 10    # Any time averages performed over navg
-@omegatinst = 500.0    # Growth rates > omegatinst assumed numerical instability.
-@omegatol = -0.001    # The convergence has to be better than one part in 1/omegatol
