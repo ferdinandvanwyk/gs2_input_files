@@ -104,7 +104,7 @@
 
 @field_option = "local"    # Controls which time-advance algorithm is used for the linear terms.
 @field_subgath = ".true."    # Set to TRUE to use allgatherv to fetch part of the field update calculated on other procs. FALSE uses a sum_allreduce instead.
-@dump_response = ".true."    # 
+@dump_response = ".false."    # 
 @response_dir = "response"    # 
 @do_smart_update = ".true."    # 
 @field_local_allreduce = ".true."    # 
