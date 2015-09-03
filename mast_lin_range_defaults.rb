@@ -24,16 +24,6 @@
 @grid_option = "range"    # The general layout of the perpendicular grid.
 
 ######################################
-# Defaults for namelist kt_grids_box_parameters
-#######################################
-
-@nx = 256    # The number of kx modes: the number of kx modes actually simulated (ntheta0) is equal to 2*(nx - 1)/3 + 1, due to the need to prevent aliasing.
-@ny = 96    # The number of ky modes: the number of ky modes actually simulated (naky) is equal to (ny - 1)/3 + 1, due to the need to prevent aliasing.
-@jtwist = 160    # L_x = L_y  jtwist / (2 pi shat)
-@y0 = 10.0    # The length of the box in the y direction (measured in the Larmour radius of species 1)
-@x0 = 10.0    # The length of the box in the x direction (measured in the Larmour radius of species 1) if shat is 0 (ie 1e-6)
-
-######################################
 # Defaults for namelist kt_grids_range_parameters
 #######################################
 
@@ -41,13 +31,6 @@
 @theta0_max = 0.0      # Upper limit of kx range.
 @aky_min = 0.0          # Lower limit of ky range
 @aky_max = 2.0          # Upper limit of ky range
-
-######################################
-# Defaults for namelist kt_grids_single_parameters
-#######################################
-
-@theta0 = 0.0   # kx value (usually 0 since usually fastest growing)
-@aky = 0.05     # ky value for reference species
 
 ######################################
 # Defaults for namelist theta_grid_parameters
