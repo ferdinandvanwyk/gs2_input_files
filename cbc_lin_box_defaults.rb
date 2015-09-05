@@ -30,8 +30,6 @@
 # Defaults for namelist kt_grids_box_parameters
 #######################################
 
-@nx = 256    # The number of kx modes: the number of kx modes actually simulated (ntheta0) is equal to 2*(nx - 1)/3 + 1, due to the need to prevent aliasing.
-@ny = 96    # The number of ky modes: the number of ky modes actually simulated (naky) is equal to (ny - 1)/3 + 1, due to the need to prevent aliasing.
 @jtwist = 600    # L_x = L_y  jtwist / (2 pi shat)
 @y0 = 2    # The length of the box in the y direction (measured in the Larmour radius of species 1)
 @x0 = 10.0    # The length of the box in the x direction (measured in the Larmour radius of species 1) if shat is 0 (ie 1e-6)
