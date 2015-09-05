@@ -27,32 +27,20 @@
 
 
 ######################################
-# Defaults for namelist kt_grids_box_parameters
-#######################################
-
-@nx = 256    # The number of kx modes: the number of kx modes actually simulated (ntheta0) is equal to 2*(nx - 1)/3 + 1, due to the need to prevent aliasing.
-@ny = 96    # The number of ky modes: the number of ky modes actually simulated (naky) is equal to (ny - 1)/3 + 1, due to the need to prevent aliasing.
-@jtwist = 313    # L_x = L_y  jtwist / (2 pi shat)
-@y0 = 0.4    # The length of the box in the y direction (measured in the Larmour radius of species 1)
-@x0 = 10.0    # The length of the box in the x direction (measured in the Larmour radius of species 1) if shat is 0 (ie 1e-6)
-@naky = 2    # The actual number of ky modes (do not use for nonlinear runs, use ny)
-
-
-######################################
 # Defaults for namelist kt_grids_single_parameters
 #######################################
 
 @aky = 0.5    # The actual value of ky rho
 @theta0 = 0.0    # 
-@akx = 0.14644527086125353    # 
+@akx = 0.0 
 
 
 ######################################
 # Defaults for namelist theta_grid_parameters
 #######################################
 
-@ntheta = 16    # Number of points along field line (theta) per 2 pi segment
-@nperiod = 3    # Number of 2 pi segments along equilibrium magnetic field.
+@ntheta = 24    # Number of points along field line (theta) per 2 pi segment
+@nperiod = 2    # Number of 2 pi segments along equilibrium magnetic field.
 @shat = 3.9955695    # 
 @rhoc = 0.7966436    # Flux surface label. Usually rho = diameter/diameter of LCFS
 @qinp = 2.31493    # Sets value of the safety factor when using local toroidal equilibrium model.
@@ -144,7 +132,7 @@
 # Defaults for namelist layouts_knobs
 #######################################
 
-@layout = "lxyes"    # 'yxles', 'lxyes', 'lyxes', 'lexys' Determines the way the grids are laid out in memory.
+@layout = "lexys"    # 'yxles', 'lxyes', 'lyxes', 'lexys' Determines the way the grids are laid out in memory.
 @unbalanced_xxf = ".false."    # This allows GS2 to set up an unbalanced xxf processor grid (e.g. leaving some tasks with no work) in order to balance the work load on each.
 @max_unbalanced_xxf = 0.5    # This sets the maximum level of difference between the largest and smallest block sizes. Must be between 0 and 1
 @unbalanced_yxf = ".false."    # This allows GS2 to set up an unbalanced yxxf processor grid (e.g. leaving some tasks with no work) in order to balance the work load on each.
