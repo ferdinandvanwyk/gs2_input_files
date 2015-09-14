@@ -171,7 +171,6 @@
 @chop_side = ".false."    # Rarely needed. Forces asymmetry into initial condition.
 @phiinit = 0.001    # Average amplitude of initial perturbation of each Fourier mode.
 @ginit_option = "noise"    # Sets the way that the distribution function is initialized.
-@restart_dir = "nc"    # 
 
 
 ######################################

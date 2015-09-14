@@ -218,7 +218,6 @@
 @phiinit = 0.001    # Average amplitude of initial perturbation of each Fourier mode.
 @ginit_option = "noise"    # Sets the way that the distribution function is initialized.
 @zf_init = 0.0    # 
-@restart_dir = "nc"    # 
 @phifrac = 0.1    # 
 
 

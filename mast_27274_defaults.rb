@@ -237,7 +237,6 @@
 @width0 = 3.0    # Initial perturbation has Gaussian envelope in theta with width width0,
 @phiinit = 1.0e-03    # Average amplitude of initial perturbation of each Fourier mode.
 @ginit_option = "noise"    # Sets the way that the distribution function is initialized.
-@restart_dir = "nc"    # 
 
 
 ######################################
