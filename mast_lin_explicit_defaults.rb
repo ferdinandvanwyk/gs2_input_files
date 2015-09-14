@@ -228,7 +228,6 @@
 
 @chop_side = ".false."    # Rarely needed. Forces asymmetry into initial condition.
 @phiinit = 0.001    # Average amplitude of initial perturbation of each Fourier mode.
-@restart_file = "gs2.nc"    # Base of filenames with restart data.
 @ginit_option = "noise"    # Sets the way that the distribution function is initialized.
 @restart_dir = "v/id_25/nc"    # 
 

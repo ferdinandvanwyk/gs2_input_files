@@ -216,7 +216,6 @@
 
 @chop_side = ".false."    # Rarely needed. Forces asymmetry into initial condition.
 @phiinit = 0.001    # Average amplitude of initial perturbation of each Fourier mode.
-@restart_file = "v_resubmit_id_32_nwrite_200_tprim_1_2.56_tprim_2_1.47_fprim_1_1.02_fprim_2_1.02_id_38.nc"    # Base of filenames with restart data.
 @ginit_option = "noise"    # Sets the way that the distribution function is initialized.
 @zf_init = 0.0    # 
 @restart_dir = "nc"    # 
