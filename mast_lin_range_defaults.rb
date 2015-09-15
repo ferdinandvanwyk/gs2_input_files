@@ -83,8 +83,7 @@
 @gridfac = 1.0    # Affects boundary condition at end of theta grid.
 @apfac = 1.0    # 
 @driftknob = 1.0    # 
-@g_exb = 0.15913171	# Velocity shear	
-@g_exb_start_timestep = 1000    # Flow shear is switched on at this time step.
+@g_exb = 0.0	# Velocity shear	
 @boundary_option = "default"
 
 ######################################
