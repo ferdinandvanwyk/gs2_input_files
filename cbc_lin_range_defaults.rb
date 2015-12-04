@@ -34,6 +34,8 @@
 @theta0_max = 0.0      # Upper limit of kx range.
 @aky_min = 0.0          # Lower limit of ky range
 @aky_max = 2.0          # Upper limit of ky range
+@naky = 16
+@ntheta0 = 1
 
 ######################################
 # Defaults for namelist theta_grid_parameters
