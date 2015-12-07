@@ -31,9 +31,9 @@
 #######################################
 
 @nx = 8    # The number of kx modes: the number of kx modes actually simulated (ntheta0) is equal to 2*(nx - 1)/3 + 1, due to the need to prevent aliasing.
-@ny = 12
-@jtwist = 4    # L_x = L_y  jtwist / (2 pi shat)
-@y0 = 10.0    # The length of the box in the y direction (measured in the Larmour radius of species 1)
+@ny = 8
+@jtwist = 1    # L_x = L_y  jtwist / (2 pi shat)
+@y0 = 2.0    # The length of the box in the y direction (measured in the Larmour radius of species 1)
 @x0 = 10.0    # The length of the box in the x direction (measured in the Larmour radius of species 1) if shat is 0 (ie 1e-6)
 
 
@@ -99,7 +99,7 @@
 @fphi = 1.0    # Multiplies Phi (electrostatic potential).
 @fapar = 0.0    # Multiplies A_par. Use 1 for finite beta (electromagnetic), 0 otherwise (electrostatic)
 @faperp = 0.0    # Multiplies A_perp. Use 1 for high beta, 0 otherwise. Deprecated: use fbpar instead
-@delt = 0.01    # Time step
+@delt = 0.5    # Time step
 @nstep = 50    # Maximum number of timesteps
 @avail_cpu_time = 1200    # Specify the available wall clock time in seconds. GS2 will exit before this time.
 
@@ -197,6 +197,8 @@
 @omegatinst = 500.0    # Recommended value: 500.
 @save_for_restart = ".false."    # Write restart files.
 @write_phi_over_time = ".true."    # Write entire Phi field to NetCDF file every nwrite.
+@write_ntot_over_time = ".true."    # Write entire Phi field to NetCDF file every nwrite.
 @write_moments = ".true."
 @write_line = ".true."
+@write_fluxes_by_mode = ".true."
 
